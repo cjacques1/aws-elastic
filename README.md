@@ -7,7 +7,7 @@ run ```go get github.com/cjacques1/aws-elastic```
 ## Calls supported
 ```
 elasticSearch := ElasticSearch{
-  RootURL: "<url to aws elastic instance",
+  RootURL: "<url to aws elastic instance>",
   Index:   "<index name>",
   Type:    "<type name>",
 }
@@ -30,7 +30,7 @@ import (
 )
 
 elasticSearch := ElasticSearch{
-  RootURL: "<url to aws elastic instance",
+  RootURL: "<url to aws elastic instance>",
   Index:   "<index name>",
   Type:    "<type name>",
 }
