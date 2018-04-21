@@ -1,10 +1,10 @@
 # aws-elastic
 This repo will allow you to communicate with aws elasticsearch in golang.
 
-# get the library
+## get the library
 run ```go get github.com/cjacques1/aws-elastic```
 
-# Calls supported
+## Calls supported
 ```
 elasticSearch := ElasticSearch{
   RootURL: "<url to aws elastic instance",
@@ -19,7 +19,7 @@ elasticSearch.GetAllRecords() (*SearchResult, error)
 elasticSearch.UpdateRecord(record interface{}, id string) error
 ```
 
-# example using library
+## example using library
 
 ```
 import (
@@ -69,3 +69,7 @@ reqBodyBytes := new(bytes.Buffer)
 json.NewEncoder(reqBodyBytes).Encode(elasticQuery)
 
 results, err := elasticSearch.GetRecords(reqBodyBytes.Bytes())
+```
+
+## TODO
+Add unit tests
